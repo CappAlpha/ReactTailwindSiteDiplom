@@ -15,6 +15,11 @@ import {
   star,
 } from '../assets';
 
+export const test = {
+  id: 2,
+  text: 'Test',
+};
+
 export const navLinks = [
   {
     id: 'home',
