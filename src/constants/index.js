@@ -15,10 +15,7 @@ import {
   star,
 } from '../assets';
 
-export const test = {
-  id: 2,
-  text: 'Test',
-};
+export const currentYear = new Date();
 
 export const navLinks = [
   {
@@ -178,22 +175,22 @@ export const socialMedia = [
   {
     id: 'social-media-1',
     icon: instagram,
-    link: 'https://www.instagram.com/',
+    link: 'https://www.google.com/',
   },
   {
     id: 'social-media-2',
     icon: facebook,
-    link: 'https://www.facebook.com/',
+    link: 'https://www.google.com/',
   },
   {
     id: 'social-media-3',
     icon: twitter,
-    link: 'https://www.twitter.com/',
+    link: 'https://www.google.com/',
   },
   {
     id: 'social-media-4',
     icon: linkedin,
-    link: 'https://www.linkedin.com/',
+    link: 'https://www.google.com/',
   },
 ];
 
