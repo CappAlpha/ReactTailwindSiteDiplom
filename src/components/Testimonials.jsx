@@ -1,6 +1,6 @@
 import { feedback } from '../constants';
 import styles from '../style';
-import FeedbackCard from './FeedbackCard';
+import FeedbackCard from '../utils/FeedbackCard';
 
 const Testimonials = () => (
   <section
@@ -11,13 +11,13 @@ const Testimonials = () => (
 
     <div className="w-full flex justift-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h1 className={styles.heading2}>
-        {' '}
-        What people are <br className="sm:block hidden" /> saying about us
+        Что люди думают
+        <br className="sm:block hidden" /> о нашем сервисе
       </h1>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to acceot card payments and grow your buisness
-          anywhere on the planet.
+          Всё что вам нужно, это дать нам задание и оно будет готово в
+          кратчайшие сроки.
         </p>
       </div>
     </div>

@@ -20,19 +20,19 @@ export const currentYear = new Date();
 export const navLinks = [
   {
     id: 'home',
-    title: 'Home',
+    title: 'Главная',
   },
   {
     id: 'features',
-    title: 'Features',
+    title: 'Преимущества',
   },
   {
     id: 'product',
-    title: 'Product',
+    title: 'Продукт',
   },
   {
     id: 'clients',
-    title: 'Clients',
+    title: 'Отзывы',
   },
 ];
 
@@ -90,82 +90,74 @@ export const feedback = [
 export const stats = [
   {
     id: 'stats-1',
-    title: 'User Active',
+    title: 'Пользователей',
     value: '3800+',
   },
   {
     id: 'stats-2',
-    title: 'Trusted by Company',
+    title: 'Заказов',
     value: '230+',
   },
   {
     id: 'stats-3',
-    title: 'Transaction',
+    title: 'Переводов',
     value: '$230M+',
   },
 ];
 
 export const footerLinks = [
   {
-    title: 'Useful Links',
+    title: 'Заказчикам',
     links: [
       {
-        name: 'Content',
+        name: 'Как сделать заказ',
         link: 'https://www.hoobank.com/content/',
       },
       {
-        name: 'How it Works',
+        name: 'Способы оплаты',
         link: 'https://www.hoobank.com/how-it-works/',
       },
       {
-        name: 'Create',
+        name: 'Возврат товаров',
         link: 'https://www.hoobank.com/create/',
       },
       {
-        name: 'Explore',
-        link: 'https://www.hoobank.com/explore/',
-      },
-      {
-        name: 'Terms & Services',
+        name: 'Безопасность',
         link: 'https://www.hoobank.com/terms-and-services/',
       },
     ],
   },
   {
-    title: 'Community',
+    title: 'О компании',
     links: [
       {
-        name: 'Help Center',
+        name: 'О Чертиле',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
-        name: 'Partners',
+        name: 'Реквизиты',
         link: 'https://www.hoobank.com/partners/',
       },
       {
-        name: 'Suggestions',
+        name: 'Контакты',
         link: 'https://www.hoobank.com/suggestions/',
-      },
-      {
-        name: 'Blog',
-        link: 'https://www.hoobank.com/blog/',
-      },
-      {
-        name: 'Newsletters',
-        link: 'https://www.hoobank.com/newsletters/',
       },
     ],
   },
   {
-    title: 'Partner',
+    title: 'Зарабатывай с нами',
     links: [
       {
-        name: 'Our Partner',
-        link: 'https://www.hoobank.com/our-partner/',
+        name: 'Стать продавцом',
+        link: 'https://www.hoobank.com/help-center/',
       },
       {
-        name: 'Become a Partner',
-        link: 'https://www.hoobank.com/become-a-partner/',
+        name: 'Вакансии',
+        link: 'https://www.hoobank.com/partners/',
+      },
+      {
+        name: 'Почему именно мы',
+        link: 'https://www.hoobank.com/suggestions/',
       },
     ],
   },

@@ -4,12 +4,11 @@ import NavbarMobile from './Navbar/NavbarMobile.jsx';
 import Billing from './components/Billing';
 import CardDeal from './components/CardDeal';
 import Business from './components/Business';
-import Clients from './components/Clients';
-import CTA from './components/CTA';
-import Stats from './components/Stats';
+import CTA from './utils/CardTryNow';
+import Stats from './utils/Stats';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
-import Hero from './components/Hero';
+import Home from './components/Home';
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -22,14 +21,14 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Hero />
+        <Home />
       </div>
     </div>
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats /> <Business /> <Billing /> <CardDeal /> <Testimonials />{' '}
-        <Clients /> <CTA /> <Footer />
+        <Stats /> <Business /> <Billing /> <CardDeal /> <Testimonials />
+        <CTA /> <Footer />
       </div>
     </div>
   </div>

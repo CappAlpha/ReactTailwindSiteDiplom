@@ -1,6 +1,6 @@
 import { features } from '../constants';
 import styles, { layout } from '../style';
-import Button from './Button';
+import ButtonToStart from '../utils/ButtonToStart';
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
@@ -29,15 +29,16 @@ const Business = () => {
     <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          You do the buisness, <br className="sm:block hidden" /> we’ll handle
-          the money.
+          Вы можете <br className="sm:block hidden" /> спать спокойно,
+          <br className="sm:block hidden" />
+          пока мы делаем заказ.
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             repellat inventore enim neque aut error exercitationem voluptas?
           </p>
         </h2>
 
-        <Button styles="mt-10" />
+        <ButtonToStart styles="mt-10" />
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (

@@ -1,30 +1,19 @@
 import { useState } from 'react';
 
 import { close, menu } from '../assets';
-import { navLinks, socialMedia } from '../constants';
+import { navLinks } from '../constants';
 
 const NavbarMobile = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
     <div className="sm:hidden flex flex-1 justify-between items-center">
-      <div className="sm:hidden flex justify-start flex-row mt-0">
-        {socialMedia.map((social, index) => (
-          <a
-            href={social.link}
-            target="_blank"
-            className={`cursor-pointer ${
-              index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
-            }`}
-          >
-            <img
-              key={social.id}
-              src={social.icon}
-              alt={social.id}
-              className={`w-[26px] h-[26px] object-contain`}
-            />
-          </a>
-        ))}
+      <div className="sm:hidden flex">
+        <a href="">
+          <p className="font-poppins font-bold text-[32px] text-gradient xs:leading-[56.8px] leading-[46.8px]">
+            Чертила
+          </p>
+        </a>
       </div>
       <img
         src={toggle ? close : menu}
