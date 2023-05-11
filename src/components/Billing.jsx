@@ -1,5 +1,5 @@
 import { apple, bill, google } from '../assets';
-import styles, { layout } from '../style';
+import styles, { layout } from '../constants/style';
 
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
@@ -8,6 +8,7 @@ const Billing = () => (
         src={bill}
         alt="billing"
         className="w-[100%] h-[100%] realtive z-[5]"
+        loading="lazy"
       />
 
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

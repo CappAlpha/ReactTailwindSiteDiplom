@@ -1,5 +1,5 @@
 import { card } from '../assets';
-import styles, { layout } from '../style';
+import styles, { layout } from '../constants/style';
 import ButtonToStart from '../utils/ButtonToStart';
 
 const CardDeal = () => (
@@ -18,7 +18,7 @@ const CardDeal = () => (
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="card" className="w-[100%] h-[100%]" />
+      <img src={card} alt="card" className="w-[100%] h-[100%]" loading="lazy" />
     </div>
   </section>
 );

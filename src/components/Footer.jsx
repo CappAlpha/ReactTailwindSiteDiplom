@@ -1,4 +1,4 @@
-import styles from '../style';
+import styles from '../constants/style';
 import { currentYear, footerLinks, socialMedia } from '../constants';
 
 const Footer = () => (
@@ -40,6 +40,7 @@ const Footer = () => (
         {currentYear.getFullYear()} Чертила. Все права соблюдены.
       </p>
       <div className="flex flex-row md:mt-0 mt-6">
+        <p className={`${styles.paragraph} mr-3`}>Мы в соцсетях:</p>
         {socialMedia.map((social, index) => (
           <a
             href={social.link}

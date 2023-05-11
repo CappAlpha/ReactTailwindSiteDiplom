@@ -1,4 +1,4 @@
-import styles from '../style';
+import styles from '../constants/style';
 import { discount, robot } from '../assets';
 import GetStarted from '../utils/GetStarted';
 
@@ -12,7 +12,7 @@ const Home = () => (
         <p className={`${styles.paragraph} ml-2`}>
           <span className="text-white">20%</span>
           {''} Скидка на {''}
-          <span className="text-white"> 1 </span>
+          <span className="text-white"> первый </span>
           {''} заказ
         </p>
       </div>
