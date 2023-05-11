@@ -110,18 +110,22 @@ export const footerLinks = [
     title: 'Заказчикам',
     links: [
       {
+        id: 'li-11',
         name: 'Как сделать заказ',
         link: 'https://www.hoobank.com/content/',
       },
       {
+        id: 'li-12',
         name: 'Способы оплаты',
         link: 'https://www.hoobank.com/how-it-works/',
       },
       {
+        id: 'li-13',
         name: 'Возврат товаров',
         link: 'https://www.hoobank.com/create/',
       },
       {
+        id: 'li-14',
         name: 'Безопасность',
         link: 'https://www.hoobank.com/terms-and-services/',
       },
@@ -131,14 +135,17 @@ export const footerLinks = [
     title: 'О компании',
     links: [
       {
+        id: 'li-21',
         name: 'О Чертиле',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
+        id: 'li-22',
         name: 'Реквизиты',
         link: 'https://www.hoobank.com/partners/',
       },
       {
+        id: 'li-23',
         name: 'Контакты',
         link: 'https://www.hoobank.com/suggestions/',
       },
@@ -148,14 +155,17 @@ export const footerLinks = [
     title: 'Зарабатывай с нами',
     links: [
       {
+        id: 'li-31',
         name: 'Стать продавцом',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
+        id: 'li-32',
         name: 'Вакансии',
         link: 'https://www.hoobank.com/partners/',
       },
       {
+        id: 'li-33',
         name: 'Почему именно мы',
         link: 'https://www.hoobank.com/suggestions/',
       },

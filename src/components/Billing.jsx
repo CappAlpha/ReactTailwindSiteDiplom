@@ -2,7 +2,7 @@ import { apple, bill, google } from '../assets';
 import styles, { layout } from '../constants/style';
 
 const Billing = () => (
-  <section id="product" className={layout.sectionReverse}>
+  <section id="product" className={`${layout.sectionReverse} `}>
     <div className={layout.sectionImgReverse}>
       <img
         src={bill}

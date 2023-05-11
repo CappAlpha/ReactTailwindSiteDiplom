@@ -1,9 +1,9 @@
 import styles from '../constants/style';
 import ButtonToStart from './ButtonToStart';
 
-const CTA = () => (
+const CardTryNow = () => (
   <section
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:mx-0 mx-6 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
   >
     <div className="flex-1 flex flex-col">
       <h2 className={styles.heading2}>Попробуйте наш сервис сейчас!</h2>
@@ -19,4 +19,4 @@ const CTA = () => (
   </section>
 );
 
-export default CTA;
+export default CardTryNow;

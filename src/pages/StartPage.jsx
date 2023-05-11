@@ -1,30 +1,32 @@
 import { Link } from 'react-router-dom';
 
 import styles from '../constants/style';
-import CTA from '../utils/CardTryNow';
+import CardTryNow from '../utils/CardTryNow';
 import Footer from '../components/Footer';
 
 const StartPage = () => (
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <header className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Link to="/">
-          <p className={`${styles.paragraph}`}>Touch me</p>
+          <p className="font-poppins font-bold text-[32px] text-gradient xs:leading-[56.8px] leading-[46.8px] active:opacity-70">
+            Чертила
+          </p>
         </Link>
       </div>
-    </div>
+    </header>
 
-    {/* <div className={`bg-primary ${styles.flexCenter}`}>
+    {/* <main className={`bg-primary ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Home />
       </div>
-    </div> */}
+    </main> */}
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <footer className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <CTA /> <Footer />
+        <CardTryNow /> <Footer />
       </div>
-    </div>
+    </footer>
   </div>
 );
 

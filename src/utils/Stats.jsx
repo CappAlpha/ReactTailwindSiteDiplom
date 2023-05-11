@@ -1,6 +1,10 @@
 import { stats } from '../constants';
+import styles from '../constants/style';
+
 const Stats = () => (
-  <section className="flex flex-row justify-between flex-wrap sm:mb-20 mb-6">
+  <section
+    className={`flex flex-row justify-between flex-wrap sm:mb-20 mb-6 sm:px-0 px-6`}
+  >
     {stats.map((stat) => (
       <div
         key={stat.id}
