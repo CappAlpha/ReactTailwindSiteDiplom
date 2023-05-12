@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { close, menu } from '../assets';
-import { navLinks } from '../constants';
+import { close, menu } from '../../../../assets';
+import { navLinks } from '../../../../constants';
 
 const NavbarMobile = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,7 +11,7 @@ const NavbarMobile = () => {
       <div className="sm:hidden flex">
         <a href="">
           <p className="font-poppins font-bold text-[32px] text-gradient xs:leading-[56.8px] leading-[46.8px]">
-            Чертила
+            Ingenium
           </p>
         </a>
       </div>

@@ -2,10 +2,8 @@ import { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-// import StartPage from './pages/StartPage';
-// const HomePage = lazy(() => import('./pages/HomePage'));
-const StartPage = lazy(() => import('./pages/StartPage'));
+import HomePage from './pages/homepage/HomePage';
+const StartPage = lazy(() => import('./pages/startpage/StartPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 const App = () => {

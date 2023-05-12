@@ -40,23 +40,21 @@ export const features = [
   {
     id: 'feature-1',
     icon: star,
-    title: 'Rewards',
-    content:
-      'The best credit cards offer some tantalizing combinations of promotions and prizes',
+    title: 'Специалисты',
+    content: '',
   },
   {
     id: 'feature-2',
     icon: shield,
-    title: '100% Secured',
+    title: 'Гарантия',
     content:
-      'We take proactive steps make sure your information and transactions are secure.',
+      'Мы сделали шаги к тому, чтобы ваши данные и переводы были защищены и анонимны.',
   },
   {
     id: 'feature-3',
     icon: send,
-    title: 'Balance Transfer',
-    content:
-      'A balance transfer credit card can save you a lot of money in interest charges.',
+    title: 'Оплата',
+    content: 'Выберите удобный для вас способ оплаты.',
   },
 ];
 

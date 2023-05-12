@@ -3,13 +3,14 @@ import ButtonToStart from './ButtonToStart';
 
 const CardTryNow = () => (
   <section
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:mx-0 mx-6 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
   >
-    <div className="flex-1 flex flex-col">
-      <h2 className={styles.heading2}>Попробуйте наш сервис сейчас!</h2>
-      <p className={`${styles.paragraph} max-w-[585px] mt-6`}>
-        Всё что вам нужно, это попробовать наш сервис! Зарекомендовавший себя,
-        как надёжный помощник в решении задач.
+    <div className="flex-1 flex-col">
+      <h2 className={`${styles.heading2}`}>
+        Воспользуйтесь нашими услугами прямо сейчас!
+      </h2>
+      <p className={`${styles.paragraph} max-w-[620px] mt-6`}>
+        Надёжный помощник в решении задач любого уровня.
       </p>
     </div>
 
