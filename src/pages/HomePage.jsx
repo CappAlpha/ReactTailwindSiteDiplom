@@ -5,7 +5,7 @@ import Billing from '../components/Billing';
 import CardDeal from '../components/CardDeal';
 import Business from '../components/Business';
 import CardTryNow from '../utils/CardTryNow';
-import Stats from '../utils/Stats';
+import Stats from '../components/Stats';
 import Footer from '../components/Footer';
 import Reviews from '../components/Reviews';
 import Home from '../components/Home';

@@ -1,5 +1,4 @@
 import { stats } from '../constants';
-import styles from '../constants/style';
 
 const Stats = () => (
   <section
