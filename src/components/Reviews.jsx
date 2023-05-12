@@ -9,7 +9,7 @@ const Reviews = () => (
   >
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient" />
 
-    <div className="w-full flex justift-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
+    <div className="w-full flex sm:justift-between jus items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h1 className={styles.heading2}>
         Что люди думают
         <br className="sm:block hidden" /> о нашем сервисе
