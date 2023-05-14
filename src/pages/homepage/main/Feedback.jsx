@@ -2,7 +2,7 @@ import { apple, bill, google } from '../../../assets';
 import styles, { layout } from '../../../constants/style';
 
 const Feedback = () => (
-  <section id="product" className={`${layout.sectionReverse} `}>
+  <section id="product" className={`${layout.sectionReverse}`}>
     <div className={layout.sectionImgReverse}>
       <img
         src={bill}
@@ -20,8 +20,9 @@ const Feedback = () => (
         Доступные <br className="sm:block hidden" />
         способы оплаты
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Заберём все ваши деньги.
+      <p className={`${styles.paragraph} max-w-[400px] mt-5`}>
+        Прислушаемся ко всем вашим пожеланиям, готовы делать правки даже после
+        сданной работы в течении месяца.
       </p>
       {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <img

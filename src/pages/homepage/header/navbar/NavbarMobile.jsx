@@ -9,11 +9,9 @@ const NavbarMobile = () => {
   return (
     <div className="sm:hidden flex flex-1 justify-between items-center">
       <div className="sm:hidden flex">
-        <a href="">
-          <p className="font-poppins font-bold text-[32px] text-gradient xs:leading-[56.8px] leading-[46.8px]">
-            Ingenium
-          </p>
-        </a>
+        <p className="font-poppins font-bold text-[32px] text-gradient xs:leading-[56.8px] leading-[46.8px]">
+          Ingenium
+        </p>
       </div>
       <img
         src={toggle ? close : menu}
@@ -32,7 +30,7 @@ const NavbarMobile = () => {
               key={nav.id}
               className={`font-poppins font-normal cursor-pointer text-[20px] ${
                 index === navLinks.length - 1 ? 'mb-0' : 'mb-12'
-              } hover:text-secondary text-white`}
+              } active:opacity-50 text-white`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

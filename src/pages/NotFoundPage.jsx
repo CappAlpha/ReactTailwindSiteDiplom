@@ -6,7 +6,7 @@ const NotFoundPage = () => {
       <h3 className="text-white font-bold text-[42px] font-poppins z-[5]">
         Этой страницы не существует. Вернитесь на{' '}
         <Link
-          className="text-secondary hover:text-dimWhite active:opacity-50 cursor-pointer"
+          className="text-secondary hover:text-dimWhite hover:underline hover:underline-offset-4 active:opacity-50 cursor-pointer"
           to="/"
         >
           главную.
