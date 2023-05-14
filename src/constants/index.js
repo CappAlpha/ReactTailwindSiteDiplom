@@ -134,7 +134,7 @@ export const footerLinks = [
     links: [
       {
         id: 'li-21',
-        name: 'О Чертиле',
+        name: 'О Ingenium',
         link: 'https://www.hoobank.com/help-center/',
       },
       {

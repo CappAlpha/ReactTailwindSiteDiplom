@@ -11,7 +11,7 @@ const Footer = () => (
           <p
             className={`${styles.heading2} text-gradient active:opacity-70 hover:drop-shadow-[0px_15px_15px_rgba(0,255,255,0.2)]`}
           >
-            Ingenium.
+            Ingenium
           </p>
         </Link>
         <p className={`${styles.paragraph} mt-2 max-w-[400px]`}>
@@ -20,10 +20,7 @@ const Footer = () => (
       </div>
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerLink, index) => (
-          <div
-            key={`main div ${index}`}
-            className="flex flex-col ss:my-0 my-4 min-w-[150px] "
-          >
+          <div key={`main div ${index}`} className="ss:my-0 my-4 min-w-[150px]">
             <h4
               key={`title ${footerLink.title}`}
               className="font-poppins font-medium text-[18px] leading-[27px] text-white"
@@ -35,13 +32,15 @@ const Footer = () => (
               className="list-none mt-4"
             >
               {footerLink.links.map((link, index) => (
-                <li
-                  key={`menu item ${link.name}`}
-                  className={`font-poppins font-normal text-[16px] leading-[24px]  text-dimWhite hover:text-secondary  hover:underline  hover:underline-offset-4 active:opacity-70 cursor-pointer ${
-                    index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'
-                  }`}
-                >
-                  {link.name}
+                <li key={`menu item ${link.name}`}>
+                  <Link
+                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary active:opacity-70 cursor-pointer li ${
+                      index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'
+                    }`}
+                    to="/"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

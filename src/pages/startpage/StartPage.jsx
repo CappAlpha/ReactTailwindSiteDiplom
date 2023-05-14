@@ -2,6 +2,7 @@ import styles from '../../constants/style';
 import Header from '../startpage/header/Header';
 import Footer from '../../footer/Footer';
 import StartForm from './main/StartForm';
+import Catalog from './main/Catalog';
 
 const StartPage = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -11,8 +12,9 @@ const StartPage = () => (
       </div>
     </header>
 
-    <main className={`bg-primary ${styles.flexCenter}`}>
+    <main className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
+        <Catalog />
         <StartForm />
       </div>
     </main>
