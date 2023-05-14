@@ -10,10 +10,10 @@ const Reviews = () => (
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient" />
 
     <div className="w-full flex justify-center items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h1 className={styles.heading2}>
+      <h2 className={styles.heading2}>
         Отзывы клиентов
         <br className="sm:block hidden" /> о нашем сервисе
-      </h1>
+      </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[480px]`}>
           Всё, что вам нужно - предоставить техническое задание, и мы выполним
@@ -22,7 +22,7 @@ const Reviews = () => (
       </div>
     </div>
 
-    <div className="flex flex-wrap justify-center w-full feedback-container relative z-[1]">
+    <div className="flex flex-wrap llg:justify-between justify-center w-full feedback-container relative z-[1]">
       {feedback.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}

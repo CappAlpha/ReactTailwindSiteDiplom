@@ -7,7 +7,9 @@ const CardTryNow = () => (
   >
     <div className="flex-1 flex-col">
       <h2 className={`${styles.heading2}`}>
-        Воспользуйтесь нашими услугами прямо сейчас!
+        <p className="ss:text-[36px] text-[28px] leading-[46px]">
+          Воспользуйтесь нашими услугами прямо сейчас!
+        </p>
       </h2>
       <p className={`${styles.paragraph} max-w-[620px] mt-6`}>
         Надёжный помощник в решении задач любого уровня.

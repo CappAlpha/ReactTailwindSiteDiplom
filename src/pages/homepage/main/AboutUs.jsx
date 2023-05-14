@@ -3,7 +3,7 @@ import styles, { layout } from '../../../constants/style';
 import ButtonToStart from '../../../utils/ButtonToStart';
 import FeatureCard from '../../../utils/FeatureCard';
 
-const Business = () => {
+const AboutUs = () => {
   return (
     <section id="features" className={`${layout.section}`}>
       <div className={layout.sectionInfo}>
@@ -28,4 +28,4 @@ const Business = () => {
   );
 };
 
-export default Business;
+export default AboutUs;

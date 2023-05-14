@@ -43,10 +43,13 @@ const Footer = () => (
     </div>
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        {currentYear.getFullYear()} Ingenium. Все права соблюдены.
+        {currentYear.getFullYear()} Ingenium. <br className="sm:hidden block" />{' '}
+        Все права соблюдены.
       </p>
       <div className="flex flex-row md:mt-0 mt-6">
-        <p className={`${styles.paragraph} mr-3`}>Мы в соцсетях:</p>
+        <p className="font-poppins font-normal text-dimWhite sm:text-[22px] text-[16px] leading-[30.8px] mr-3">
+          Мы в соцсетях:
+        </p>
         {socialMedia.map((social, index) => (
           <a
             key={`link ${social.id}`}

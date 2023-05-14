@@ -2,8 +2,8 @@ import { card } from '../../../assets';
 import styles, { layout } from '../../../constants/style';
 import ButtonToStart from '../../../utils/ButtonToStart';
 
-const CardDeal = () => (
-  <section className={`${layout.section}`}>
+const EasyAndFast = () => (
+  <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         Выберете нужную задачу <br className="sm:block hidden" /> всего за пару
@@ -30,4 +30,4 @@ const CardDeal = () => (
   </section>
 );
 
-export default CardDeal;
+export default EasyAndFast;

@@ -16,7 +16,7 @@ const Home = () => (
       </div>
 
       <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[58px] text-[48px] text-white ss:leading-[80px] leading-[70px]">
+        <h1 className="flex-1 font-poppins font-bold ss:text-[58px] text-[44px] text-white ss:leading-[80px] leading-[70px]">
           Услуги
           <br className="sm:block hidden" /> {''}
           <span className="text-gradient">строительного инженеринга</span>
@@ -25,7 +25,7 @@ const Home = () => (
           <GetStarted />
         </div>
       </div>
-      <h1 className="font-poppins font-semibold ss:text-[58px] text-[48px] text-white ss:leading-[80px] leading-[70px] w-full">
+      <h1 className="font-poppins font-semibold ss:text-[58px] text-[44px] text-white ss:leading-[80px] leading-[70px] w-full">
         специально для Bас
       </h1>
       <p className={`${styles.paragraph} max-w-[700px] mt-5`}>

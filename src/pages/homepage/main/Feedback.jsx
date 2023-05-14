@@ -1,7 +1,7 @@
 import { apple, bill, google } from '../../../assets';
 import styles, { layout } from '../../../constants/style';
 
-const Billing = () => (
+const Feedback = () => (
   <section id="product" className={`${layout.sectionReverse} `}>
     <div className={layout.sectionImgReverse}>
       <img
@@ -16,7 +16,7 @@ const Billing = () => (
     </div>
 
     <div className={layout.sectionInfoRight}>
-      <h2 className="font-poppins font-semibold xs:text-[48px] text-[36px] text-white xs:leading-[76.8px] leading-[66.8px]">
+      <h2 className="font-poppins font-bold xs:text-[48px] text-[36px] text-white xs:leading-[76.8px] leading-[66.8px]">
         Доступные <br className="sm:block hidden" />
         способы оплаты
       </h2>
@@ -39,4 +39,4 @@ const Billing = () => (
   </section>
 );
 
-export default Billing;
+export default Feedback;
