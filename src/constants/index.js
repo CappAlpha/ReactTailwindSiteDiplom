@@ -58,9 +58,9 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export const reviews = [
   {
-    id: 'feedback-1',
+    id: 'reviews-1',
     content:
       'Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.',
     name: 'Herman Jensen',
@@ -68,7 +68,7 @@ export const feedback = [
     img: people01,
   },
   {
-    id: 'feedback-2',
+    id: 'reviews-2',
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: 'Steve Mark',
@@ -76,7 +76,7 @@ export const feedback = [
     img: people02,
   },
   {
-    id: 'feedback-3',
+    id: 'reviews-3',
     content:
       'It is usually people in the money business, finance, and international trade that are really rich.',
     name: 'Kenn Gallagher',
@@ -194,21 +194,25 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
+export const order = [
   {
-    id: 'client-1',
+    id: 'order-1',
     logo: airbnb,
+    price: '3400',
   },
   {
-    id: 'client-2',
+    id: 'order-2',
     logo: binance,
+    price: '33400',
   },
   {
-    id: 'client-3',
+    id: 'order-3',
     logo: coinbase,
+    price: '400',
   },
   {
-    id: 'client-4',
+    id: 'order-4',
     logo: dropbox,
+    price: '341500',
   },
 ];

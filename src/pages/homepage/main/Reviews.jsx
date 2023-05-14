@@ -1,4 +1,4 @@
-import { feedback } from '../../../constants';
+import { reviews } from '../../../constants';
 import styles from '../../../constants/style';
 import FeedbackCard from '../../../utils/FeedbackCard';
 
@@ -23,7 +23,7 @@ const Reviews = () => (
     </div>
 
     <div className="flex flex-wrap llg:justify-between justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => (
+      {reviews.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}
     </div>
