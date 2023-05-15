@@ -1,12 +1,17 @@
-import styles from '../../../constants/style';
-import { discount, robot } from '../../../assets';
-import GetStarted from '../../../utils/GetStarted';
+import styles from '../../../../constants/style';
+import { discount, robot } from '../../../../assets';
+import GetStarted from './GetStarted';
 
 const Home = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
     <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0`}>
       <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-        <img src={discount} alt="discount" className="w-[36px] h-[36px]" />
+        <img
+          src={discount}
+          alt="discount"
+          className="w-[36px] h-[36px]"
+          loading="eager"
+        />
         <p className={`${styles.paragraph} ml-2`}>
           <span className="text-white">20%</span>
           {''} Скидка на {''}
@@ -28,7 +33,9 @@ const Home = () => (
       <h1 className="font-poppins font-semibold ss:text-[58px] text-[44px] text-white ss:leading-[80px] leading-[70px] w-full">
         специально для Bас
       </h1>
-      <p className={`${styles.paragraph} max-w-[700px] mt-5`}>
+      <p
+        className={`${styles.paragraph} lg:text-justify text-left sm:hyphens-none hyphens-auto max-w-[700px] mt-5`}
+      >
         Команда наших экспертов, сделает любой заказ доступный в перечне. От
         проектов зданий до рассчётных програм на С++ и чертежей на AutoLisp.
       </p>

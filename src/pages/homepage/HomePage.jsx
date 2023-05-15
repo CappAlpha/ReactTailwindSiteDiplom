@@ -3,12 +3,12 @@ import Navbar from './header/navbar/Navbar';
 import NavbarMobile from './header/navbar/NavbarMobile';
 import Feedback from './main/Feedback';
 import EasyAndFast from './main/EasyAndFast';
-import AboutUs from './main/AboutUs';
+import AboutUs from './main/aboutUs/AboutUs';
 import CardTryNow from '../../utils/CardTryNow';
-import Stats from './header/Stats';
+import Stats from './header/home/Stats';
 import Footer from '../../footer/Footer';
-import Reviews from './main/Reviews';
-import Home from './header/Home';
+import Reviews from './main/reviews/Reviews';
+import Home from './header/home/Home';
 
 const HomePage = () => (
   <div className="bg-primary w-full overflow-hidden">

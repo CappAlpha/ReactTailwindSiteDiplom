@@ -17,7 +17,7 @@ const StartForm = () => {
   };
 
   return (
-    <section className={`flex justify-center items-center`}>
+    <section className={`flex justify-center items-center py-6`}>
       <div className="py-6 px-4 bg-black-gradient-2 rounded-[20px] box-shadow">
         <h1 className="text-center font-poppins font-bold xs:text-[36px] text-[26px] text-white xs:leading-[76.8px] leading-[46.8px] w-full mb-4 z-[5]">
           Заполните ваши контактные данные

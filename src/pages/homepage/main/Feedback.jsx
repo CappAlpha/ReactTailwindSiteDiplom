@@ -16,13 +16,16 @@ const Feedback = () => (
     </div>
 
     <div className={layout.sectionInfoRight}>
-      <h2 className="font-poppins font-bold xs:text-[48px] text-[36px] text-white xs:leading-[76.8px] leading-[66.8px]">
+      <h2 className="pr-5 font-poppins font-bold xs:text-[48px] text-[36px] text-white xs:leading-[76.8px] leading-[66.8px]">
         Доступные <br className="sm:block hidden" />
         способы оплаты
       </h2>
-      <p className={`${styles.paragraph} max-w-[400px] mt-5`}>
-        Прислушаемся ко всем вашим пожеланиям, готовы делать правки даже после
-        сданной работы в течении месяца.
+      <p
+        className={`${styles.paragraph} lg:text-justify text-left sm:hyphens-none hyphens-auto max-w-[420px] mt-5`}
+      >
+        Оплачивайте заказы банковской картой или любым онлайн кошельком. Также
+        если вы будете оформляете заказ, вы можете выбрать оплату с помощью
+        Системы быстрых платежей.
       </p>
       {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <img

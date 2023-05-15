@@ -6,14 +6,55 @@ import {
   instagram,
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   send,
   shield,
   star,
+  drawing,
+  drawinghome,
+  cPlusPlus,
+  SCAD,
+  Autolisp,
+  BIM,
 } from '../assets';
+
+export const order = [
+  {
+    id: 'order-1',
+    logo: drawing,
+    title: 'Чертёж',
+    price: '2000-20000 р.',
+  },
+  {
+    id: 'order-2',
+    logo: drawinghome,
+    title: 'Проектирование здания',
+    price: '>50000 р.',
+  },
+  {
+    id: 'order-3',
+    logo: cPlusPlus,
+    title: 'C++ программа',
+    price: '500-5000 р.',
+  },
+  {
+    id: 'order-4',
+    logo: Autolisp,
+    title: 'Autolisp программа',
+    price: '400-10000 р.',
+  },
+  {
+    id: 'order-5',
+    logo: SCAD,
+    title: 'Проектирование в SCAD',
+    price: '1500-30000 р.',
+  },
+  {
+    id: 'order-6',
+    logo: BIM,
+    title: 'BIM',
+    price: '2000-50000 р.',
+  },
+];
 
 export const currentYear = new Date();
 
@@ -36,12 +77,13 @@ export const navLinks = [
   },
 ];
 
-export const features = [
+export const aboutUs = [
   {
     id: 'feature-1',
     icon: star,
     title: 'Специалисты',
-    content: '',
+    content:
+      'Наши специалисты больше 10 лет работают в их области, решая задачи. И очень любят своё дело!',
   },
   {
     id: 'feature-2',
@@ -53,8 +95,9 @@ export const features = [
   {
     id: 'feature-3',
     icon: send,
-    title: 'Оплата',
-    content: 'Выберите удобный для вас способ оплаты.',
+    title: 'Обратная связь',
+    content:
+      'Прислушаемся ко всем вашим пожеланиям, готовы делать правки даже после сданной работы в течении месяца.',
   },
 ];
 
@@ -62,25 +105,25 @@ export const reviews = [
   {
     id: 'reviews-1',
     content:
-      'Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.',
-    name: 'Herman Jensen',
-    title: 'Founder & Leader',
+      'Надо было успеть сделать чертёж, а время поджимало. За небольшую доплату выручили. Буду обращаться дальше!',
+    name: 'Васильева Наталья',
+    title: 'Пользователь',
     img: people01,
   },
   {
     id: 'reviews-2',
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: 'Steve Mark',
-    title: 'Founder & Leader',
+      'Наша компания давно искала способ, чтобы проектирование здания было сделано качествено, в нужный срок.',
+    name: 'КИК',
+    title: 'Компания',
     img: people02,
   },
   {
     id: 'reviews-3',
     content:
-      'It is usually people in the money business, finance, and international trade that are really rich.',
-    name: 'Kenn Gallagher',
-    title: 'Founder & Leader',
+      'Всё что мне нужно находится здесь и на высоком уровне. Отвечают быстро и понимают задачу с лёту.',
+    name: 'Голубев Владимир',
+    title: 'Пользователь',
     img: people03,
   },
 ];
@@ -89,7 +132,7 @@ export const stats = [
   {
     id: 'stats-1',
     title: 'Пользователей',
-    value: '3800+',
+    value: '1430+',
   },
   {
     id: 'stats-2',
@@ -98,8 +141,8 @@ export const stats = [
   },
   {
     id: 'stats-3',
-    title: 'Переводов',
-    value: '$230M+',
+    title: 'Компаний',
+    value: '20',
   },
 ];
 
@@ -119,7 +162,7 @@ export const footerLinks = [
       },
       {
         id: 'li-13',
-        name: 'Возврат товаров',
+        name: 'Возврат денег',
         link: 'https://www.hoobank.com/create/',
       },
       {
@@ -154,7 +197,7 @@ export const footerLinks = [
     links: [
       {
         id: 'li-31',
-        name: 'Стать продавцом',
+        name: 'Стать посредником',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
@@ -191,28 +234,5 @@ export const socialMedia = [
     id: 'social-media-4',
     icon: linkedin,
     link: 'https://www.google.com/',
-  },
-];
-
-export const order = [
-  {
-    id: 'order-1',
-    logo: airbnb,
-    price: '3400',
-  },
-  {
-    id: 'order-2',
-    logo: binance,
-    price: '33400',
-  },
-  {
-    id: 'order-3',
-    logo: coinbase,
-    price: '400',
-  },
-  {
-    id: 'order-4',
-    logo: dropbox,
-    price: '341500',
   },
 ];

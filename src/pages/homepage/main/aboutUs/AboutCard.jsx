@@ -1,10 +1,10 @@
-import { features } from '../constants';
-import styles from '../constants/style';
+import { aboutUs } from '../../../../constants';
+import styles from '../../../../constants/style';
 
-const FeatureCard = ({ icon, title, content, index }) => (
+const AboutCard = ({ icon, title, content, index }) => (
   <div
     className={`flex flex-row p-6 rounded-[20px] ${
-      index !== features.length - 1 ? 'mb-6' : 'mb-0'
+      index !== aboutUs.length - 1 ? 'mb-6' : 'mb-0'
     } feature-card w-full`}
   >
     <div
@@ -28,4 +28,4 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-export default FeatureCard;
+export default AboutCard;

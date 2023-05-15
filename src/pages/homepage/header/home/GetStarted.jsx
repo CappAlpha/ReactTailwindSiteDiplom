@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import styles from '../constants/style';
-import { arrowUp } from '../assets';
+import styles from '../../../../constants/style';
+import { arrowUp } from '../../../../assets';
 
 const GetStarted = () => (
   <Link to="start">

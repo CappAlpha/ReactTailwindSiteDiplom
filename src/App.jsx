@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/homepage/HomePage';
 import ScrollToTop from './components/ScrollToTop';
+//import StartPage from './pages/startpage/StartPage';
 const StartPage = lazy(() => import('./pages/startpage/StartPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 

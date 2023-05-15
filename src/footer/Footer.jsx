@@ -14,7 +14,7 @@ const Footer = () => (
             Ingenium
           </p>
         </Link>
-        <p className={`${styles.paragraph} mt-2 max-w-[400px]`}>
+        <p className={`${styles.paragraph} mt-2 max-w-[460px]`}>
           Лучший выбор для инженерных заказов. Современный, надёжный, быстрый.
         </p>
       </div>

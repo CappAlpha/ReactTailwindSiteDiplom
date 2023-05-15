@@ -1,6 +1,6 @@
-import { reviews } from '../../../constants';
-import styles from '../../../constants/style';
-import FeedbackCard from '../../../utils/FeedbackCard';
+import { reviews } from '../../../../constants';
+import styles from '../../../../constants/style';
+import ReviewCard from './ReviewCard';
 
 const Reviews = () => (
   <section
@@ -15,7 +15,9 @@ const Reviews = () => (
         <br className="sm:block hidden" /> о нашем сервисе
       </h2>
       <div className="w-full md:mt-0 mt-6">
-        <p className={`${styles.paragraph} text-left max-w-[480px]`}>
+        <p
+          className={`${styles.paragraph} text-left sm:hyphens-none hyphens-auto max-w-[600px]`}
+        >
           Всё, что вам нужно - предоставить техническое задание, и мы выполним
           его в кратчайшие сроки.
         </p>
@@ -24,7 +26,7 @@ const Reviews = () => (
 
     <div className="flex flex-wrap llg:justify-between justify-center w-full feedback-container relative z-[1]">
       {reviews.map((card) => (
-        <FeedbackCard key={card.id} {...card} />
+        <ReviewCard key={card.id} {...card} />
       ))}
     </div>
   </section>

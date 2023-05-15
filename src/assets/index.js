@@ -1,9 +1,5 @@
-import airbnb from './airbnb.png';
 import bill from './bill.png';
-import binance from './binance.png';
 import card from './card.png';
-import coinbase from './coinbase.png';
-import dropbox from './dropbox.png';
 import quotes from './quotes.svg';
 import robot from './robot.png';
 import send from './Send.svg';
@@ -20,16 +16,24 @@ import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
 import twitter from './twitter.svg';
 import people01 from './people01.png';
-import people02 from './people02.png';
+import people02 from './people02.jpg';
 import people03 from './people03.png';
+import drawing from './drawing.png';
+import drawinghome from './drawinghome.png';
+import cPlusPlus from './cPlusPlus.png';
+import SCAD from './SCAD.png';
+import BIM from './BIM.png';
+import Autolisp from './Autolisp.webp';
 
 export {
-  airbnb,
+  drawing,
+  drawinghome,
+  cPlusPlus,
+  SCAD,
+  Autolisp,
+  BIM,
   bill,
-  binance,
   card,
-  coinbase,
-  dropbox,
   quotes,
   robot,
   send,
