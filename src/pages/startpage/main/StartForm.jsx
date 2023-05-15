@@ -17,11 +17,9 @@ const StartForm = () => {
   };
 
   return (
-    <section
-      className={`flex justify-center items-center py-6 bg-black-gradient-2 rounded-[20px] box-shadow mx-[250px]`}
-    >
-      <div>
-        <h1 className="text-center font-poppins font-bold xs:text-[36px] text-[22px] text-white xs:leading-[76.8px] leading-[46.8px] w-full mb-4 z-[5]">
+    <section className={`flex justify-center items-center`}>
+      <div className="py-6 px-4 bg-black-gradient-2 rounded-[20px] box-shadow">
+        <h1 className="text-center font-poppins font-bold xs:text-[36px] text-[26px] text-white xs:leading-[76.8px] leading-[46.8px] w-full mb-4 z-[5]">
           Заполните ваши контактные данные
         </h1>
         <form
@@ -122,7 +120,7 @@ const StartForm = () => {
           </div>
 
           <input
-            className={`mt-4 py-4 px-[140px] bg-blue-gradient font-poppins font-normal xs:text-[24px] text-[16px] text-primary outline-none rounded-[20px] ${styles} outline-none shadow-lg rounded-[20px] hover:drop-shadow-[0px_10px_10px_rgba(0,255,255,0.2)] active:opacity-70 cursor-pointer z-[5]`}
+            className={`mt-4 py-4 px-[140px] sm:w-[400px] w-[270px] bg-blue-gradient font-poppins font-normal xs:text-[24px] text-[16px] text-primary flex justify-center outline-none shadow-lg rounded-[20px] hover:drop-shadow-[0px_10px_10px_rgba(0,255,255,0.2)] active:opacity-70 cursor-pointer z-[5]`}
             type="submit"
             disabled={!isValid}
           />
