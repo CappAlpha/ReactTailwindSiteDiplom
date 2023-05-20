@@ -1,7 +1,7 @@
-import { apple, bill, google } from '../../../assets';
+import { bill, visa, mastercard, sbp } from '../../../assets';
 import styles, { layout } from '../../../constants/style';
 
-const Feedback = () => (
+const Payment = () => (
   <section id="product" className={`${layout.sectionReverse}`}>
     <div className={layout.sectionImgReverse}>
       <img
@@ -24,23 +24,30 @@ const Feedback = () => (
         className={`${styles.paragraph} lg:text-justify text-left sm:hyphens-none hyphens-auto max-w-[420px] mt-5`}
       >
         Оплачивайте заказы банковской картой или любым онлайн кошельком. Также
-        если вы будете оформляете заказ, вы можете выбрать оплату с помощью
-        Системы быстрых платежей.
+        вы можете выбрать оплату с помощью Системы быстрых платежей.
       </p>
-      {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+      <div className="flex flex-row flex-wrap sm:mt-10 mt-6 lg:justify-end xs:justify-start justify-center w-full">
         <img
-          src={apple}
-          alt="app_store"
-          className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
+          src={visa}
+          alt="visa"
+          className="w-[128px] h-[56px] object-contain mr-5"
+          loading="lazy"
         />
         <img
-          src={google}
-          alt="google_play"
-          className="w-[128px] h-[42px] object-contain cursor-pointer"
+          src={mastercard}
+          alt="mastercard"
+          className="w-[128px] h-[56px] object-contain"
+          loading="lazy"
         />
-      </div> */}
+        <img
+          src={sbp}
+          alt="sbp"
+          className="w-[128px] h-[56px] object-contain xs:ml-8 ml-4 xs:mt-0 mt-6"
+          loading="lazy"
+        />
+      </div>
     </div>
   </section>
 );
 
-export default Feedback;
+export default Payment;

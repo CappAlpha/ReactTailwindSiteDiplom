@@ -14,19 +14,19 @@ const Catalog = () => {
           key={orders.id}
           className="bg-black-gradient-2 rounded-[20px] box-shadow px-4 py-6 mx-4 my-4"
         >
-          <div className="bg-white border rounded-[5px]">
+          <div key={orders.logo} className="bg-white border rounded-[5px]">
             <img
               src={orders.logo}
               className="w-[300px] h-[300px]"
               loading="eager"
             />
           </div>
-          <div>
+          <div key={orders.title}>
             <p className="text-[24px] text-center text-white mt-4">
               {orders.title}
             </p>
           </div>
-          <div>
+          <div key={orders.price}>
             <p className="text-[18px] text-center text-white mt-4">
               {orders.price}
             </p>

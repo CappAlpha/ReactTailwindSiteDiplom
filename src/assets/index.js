@@ -7,8 +7,6 @@ import shield from './Shield.svg';
 import star from './Star.svg';
 import menu from './menu.svg';
 import close from './close.svg';
-import google from './google.svg';
-import apple from './apple.svg';
 import arrowUp from './arrow-up.svg';
 import discount from './Discount.svg';
 import facebook from './facebook.svg';
@@ -24,6 +22,9 @@ import cPlusPlus from './cPlusPlus.png';
 import SCAD from './SCAD.png';
 import BIM from './BIM.png';
 import Autolisp from './Autolisp.webp';
+import visa from './visa.png';
+import mastercard from './mastercard.png';
+import sbp from './sbp.svg';
 
 export {
   drawing,
@@ -41,8 +42,6 @@ export {
   star,
   menu,
   close,
-  google,
-  apple,
   arrowUp,
   discount,
   facebook,
@@ -52,4 +51,7 @@ export {
   people01,
   people02,
   people03,
+  visa,
+  mastercard,
+  sbp,
 };

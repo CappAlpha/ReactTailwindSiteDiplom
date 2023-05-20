@@ -100,8 +100,12 @@ const StartForm = () => {
                   message: 'Поле обязательно к заполнению',
                 },
                 minLength: {
-                  value: 11,
-                  message: 'Минимум 11 символов',
+                  value: 10,
+                  message: 'Минимум 10 символов',
+                },
+                maxLength: {
+                  value: 12,
+                  message: 'Превышено количество символов',
                 },
               })}
             />
@@ -113,6 +117,11 @@ const StartForm = () => {
               </p>
             )}
             {errors?.mobileNumber?.type === 'required' && (
+              <p className="font-poppins text-[16px] text-red-500">
+                {errors?.mobileNumber?.message || 'Error!'}
+              </p>
+            )}
+            {errors?.mobileNumber?.type === 'maxLength' && (
               <p className="font-poppins text-[16px] text-red-500">
                 {errors?.mobileNumber?.message || 'Error!'}
               </p>

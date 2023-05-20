@@ -1,7 +1,7 @@
 import styles from '../../constants/style';
 import Navbar from './header/navbar/Navbar';
 import NavbarMobile from './header/navbar/NavbarMobile';
-import Feedback from './main/Feedback';
+import Payment from './main/Payment';
 import EasyAndFast from './main/EasyAndFast';
 import AboutUs from './main/aboutUs/AboutUs';
 import CardTryNow from '../../utils/CardTryNow';
@@ -22,7 +22,7 @@ const HomePage = () => (
 
     <main className={`bg-primary ${styles.flexCenter} ${styles.paddingX} `}>
       <div className={`${styles.boxWidth}`}>
-        <AboutUs /> <Feedback />
+        <AboutUs /> <Payment />
         <EasyAndFast /> <Reviews />
         <CardTryNow />
       </div>

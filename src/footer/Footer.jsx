@@ -58,21 +58,23 @@ const Footer = () => (
           Мы в соцсетях:
         </p>
         {socialMedia.map((social, index) => (
-          <a
-            key={`link ${social.id}`}
-            href={social.link}
-            target="_blank"
-            className={`cursor-pointer ${
-              index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
-            }`}
-          >
-            <img
-              key={`img ${social.id}`}
-              src={social.icon}
-              alt={social.id}
-              className={`w-[26px] h-[26px] object-contain`}
-            />
-          </a>
+          <div key={`div ${social.id}`} className="px-2 active:opacity-60">
+            <a
+              key={`link ${social.id}`}
+              href={social.link}
+              target="_blank"
+              className={`cursor-pointer ${
+                index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
+              }`}
+            >
+              <img
+                key={`img ${social.id}`}
+                src={social.icon}
+                alt={social.id}
+                className={`w-[26px] h-[26px] object-contain`}
+              />
+            </a>
+          </div>
         ))}
       </div>
     </div>
