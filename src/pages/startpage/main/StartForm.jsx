@@ -1,5 +1,4 @@
 import { useForm } from 'react-hook-form';
-import styles from '../../../constants/style';
 
 const StartForm = () => {
   const {
@@ -9,10 +8,12 @@ const StartForm = () => {
     reset,
   } = useForm({
     mode: 'onBlur',
+    defaultValues: { phoneNumber: '8' },
   });
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
+
     reset();
   };
 
@@ -63,7 +64,7 @@ const StartForm = () => {
               placeholder="Иванов Иван Иванович"
               type="text"
               className="flex bg-white text-black sm:w-[400px] w-[270px]  h-10 pl-2 cursor-pointer z-[5]"
-              {...register('FirstNameLastNamePatronymic', {
+              {...register('fullName', {
                 required: {
                   value: true,
                   message: 'Поле обязательно к заполнению',
@@ -76,14 +77,14 @@ const StartForm = () => {
             />
           </label>
           <div className="flex items-center sm:w-[400px] w-[270px] h-[30px] ">
-            {errors?.FirstNameLastNamePatronymic?.type === 'minLength' && (
+            {errors?.fullName?.type === 'minLength' && (
               <p className="font-poppins text-[16px] text-red-500">
-                {errors?.FirstNameLastNamePatronymic?.message || 'Error!'}
+                {errors?.fullName?.message || 'Error!'}
               </p>
             )}
-            {errors?.FirstNameLastNamePatronymic?.type === 'required' && (
+            {errors?.fullName?.type === 'required' && (
               <p className="font-poppins text-[16px] text-red-500">
-                {errors?.FirstNameLastNamePatronymic?.message || 'Error!'}
+                {errors?.fullName?.message || 'Error!'}
               </p>
             )}
           </div>
@@ -91,45 +92,43 @@ const StartForm = () => {
           <label className="font-poppins font-normal xs:text-[22px] text-[20px] text-white z-[5]">
             <p className="mb-2">Мобильный номер</p>
             <input
-              placeholder="+7 ... .. .."
+              placeholder="8 900 333 22 11"
               type="tel"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              maxLength="12"
               className="flex bg-white text-black sm:w-[400px] w-[270px] h-10 pl-2 cursor-pointer z-[5]"
-              {...register('mobileNumber', {
+              {...register('phoneNumber', {
                 required: {
                   value: true,
                   message: 'Поле обязательно к заполнению',
                 },
                 minLength: {
-                  value: 10,
-                  message: 'Минимум 10 символов',
-                },
-                maxLength: {
                   value: 12,
-                  message: 'Превышено количество символов',
+                  message: 'Минимум 12 символов',
                 },
               })}
             />
           </label>
           <div className="flex items-center sm:w-[400px] w-[270px] h-[30px]">
-            {errors?.mobileNumber?.type === 'minLength' && (
+            {errors?.phoneNumber?.type === 'minLength' && (
               <p className="font-poppins text-[16px] text-red-500">
-                {errors?.mobileNumber?.message || 'Error!'}
+                {errors?.phoneNumber?.message || 'Error!'}
               </p>
             )}
-            {errors?.mobileNumber?.type === 'required' && (
+            {errors?.phoneNumber?.type === 'required' && (
               <p className="font-poppins text-[16px] text-red-500">
-                {errors?.mobileNumber?.message || 'Error!'}
-              </p>
-            )}
-            {errors?.mobileNumber?.type === 'maxLength' && (
-              <p className="font-poppins text-[16px] text-red-500">
-                {errors?.mobileNumber?.message || 'Error!'}
+                {errors?.phoneNumber?.message || 'Error!'}
               </p>
             )}
           </div>
 
           <input
-            className={`mt-4 py-4 px-[140px] sm:w-[400px] w-[270px] bg-blue-gradient font-poppins font-normal xs:text-[24px] text-[16px] text-primary flex justify-center outline-none shadow-lg rounded-[20px] hover:drop-shadow-[0px_10px_10px_rgba(0,255,255,0.2)] active:opacity-70 cursor-pointer z-[5]`}
+            className={`mt-4 py-4 px-[140px] sm:w-[400px] w-[270px] bg-blue-gradient font-poppins font-normal xs:text-[24px] text-[16px] text-primary flex justify-center outline-none shadow-lg rounded-[20px] z-[5] ${
+              isValid !== true
+                ? 'opacity-20'
+                : 'opacity-100 active:opacity-70 hover:drop-shadow-[0px_10px_10px_rgba(0,255,255,0.2)] cursor-pointer'
+            }`}
             type="submit"
             disabled={!isValid}
           />
